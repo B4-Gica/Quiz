@@ -1,0 +1,47 @@
+/* for styling I used more bootstrap class for: padding, color ,margin, border, pozitionare. I would have chosen to add some styling in css sheet */
+
+body{
+    text-align: center;
+    background-color: grey;
+    }
+    
+#question1, #question2, #question3, #question4, #question5, #results {
+      display: none;
+      width: 750px;
+    }
+ #quizarea
+    {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 400px;
+      width: 800px;
+      background-color: rgb(253, 248, 248);
+      border-radius: 3px;
+      border: 2px solid rgb(28, 50, 83);
+    }
+#title {
+    background-color: rgb(186, 212, 234);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    padding-top: 15px;
+}
+h2 {
+    padding-top: 5px;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+#forma {
+    display: inline-block;
+}
+
+.btn-info {
+    background-color: rgba(149, 29, 209, 0.813) !important; /*This is a custom made color for ref button */
+    color: white;
+}
+.alin {
+    text-align: start;
+    margin-left: 25%;
+}

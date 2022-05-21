@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css" type="text/css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="quizarea">
+            <div id="title">
+                <div class="row">
+                    <h1>What is your favorite places?</h1>
+                    <br />
+                </div>
+                <hr>
+            </div>
+
+            <div id="questionarea">
+               
+                <div id="intro" class="mx-auto">
+                    <h2>Find our your favorite places!!</h2>
+                    <br />
+                    <p>Answer the questions to find out your favorite places.</p><br />
+                    <input type="button" value="Start Quiz" class="btn btn-success" onclick="startQuiz()" />
+                </div>
+
+                <form id="quizForm">
+                    
+                    <div id="question1" class="mx-auto">
+                        <div class="row">
+                            <h2>What places do you like to visit in a country?</h2>
+                        </div>
+                        <div class="row">
+                            &nbsp;
+                        </div>
+                        <div class="row">
+                            <div class="col pt-2 alin">
+                                <input type="radio" name="quest1" id="a" value="1"/>
+                                <label for="a">
+                                    a) The capital city of the country
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col pt-2 alin">
+                                <input type="radio" name="quest1" id="b" value="2" />
+                                <label for="b">b) The country villages...</label></div>
+                        </div>
+                        <div class="row">
+                            <div class="col pt-2 alin">
+                                <input type="radio" name="quest1" id="c" value="3" />
+                                <label for="c">c) The historical settlements of that country.</label>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                        
+                            <input type="button" value="Next" class="btn btn-primary mx-auto mt-5"
+                                onclick="question2()" />
+                        
+                        </div>
+                    </div>
+
+                    <div id="question2">
+                        <div class="row">
+                            <h2 >Where would you like to stay when you visit a country?</h2>
+                        </div>
+                        <div class="row">
+                            &nbsp;
+                        </div>
+                        <div class="row">
+                            <div class="col pt-2 alin">
+                                <input type="radio" name="quest2" id="a1" value="1" />
+                                <label for="a1" class="text-center">a) At a hotel in the city center</label></div>
+                        </div>
+                        <div class="row">
+                            <div class="col pt-2 alin">
+                                <input type="radio" name="quest2" id="b2" value="2" />
+                                <label for="b2">b) A rent  country house</label></div>
+                        </div>
+                        <div class="row">
+                            <div class="col pt-2 alin">
+                                <input type="radio" name="quest2" id="c2" value="3" />
+                                <label for="c2">c) live with the owner family</label>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <input type="button" value="Next" class="btn btn-primary mx-auto mt-5"
+                                onclick="question3()" />
+                        </div>
+                    </div>
+
+                    <div id="question3">
+                        <div class="row">
+                            <h2>What kind of food are you going to try when visit a country?</h2>
+                        </div>
+                        <div class="row">
+                            &nbsp;
+                        </div>
+                        <div class="row">
+                            <div class="col pt-2 alin">
+                                <input type="radio" name="quest3" id="a3" value="1" />
+                                <label for="a3">a) You stick to fast food brand`s (McD, KFC, etc) </label></div>
+                        </div>
+                        <div class="row">
+                            <div class="col pt-2 alin">
+                                <input type="radio" name="quest3" id="b3" value="2" />
+                                <label for="b3">b) You like to try traditional food</label></div>
+                        </div>
+                        <div class="row">
+                            <div class="col pt-2 alin">
+                                <input type="radio" name="quest3" id="c3" value="3" />
+                                <label for="c3">c) You like to try street food</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <input type="button" value="Next" class="btn btn-primary mx-auto mt-5"
+                                onclick="question4()" />
+                        </div>
+                    </div>
+
+                    <div id="question4">
+                        <div class="row">
+                            <h2>What activities do you prefer to do when visit a country?</h2>
+                        </div>
+                        <div class="row">
+                            &nbsp;
+                        </div>
+                        <div class="row">
+                            <div class="col pt-2 alin">
+                                <input type="radio" name="quest4" id="a4" value="1" />
+                                <label for="a4">a) To dance, party in nightclubs and meet new peopel</label></div>
+                        </div>
+                        <div class="row">
+                            <div class="col pt-2 alin">
+                                <input type="radio" name="quest4" id="b4" value="2" />
+                                <label for="b4">b) Off-road experience like camping / mountain biking</label></div>
+                        </div>
+                        <div class="row">
+                            <div class="col pt-2 alin">
+                                <input type="radio" name="quest4" id="c4" value="3" />
+                                <label for="c4">c) To learn the history of the city and to visit historical monuments</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <input type="button" value="Next" class="btn btn-primary mx-auto mt-5"
+                                onclick="question5()" />
+                        </div>
+                    </div>
+
+                    <div id="question5">
+                        <div class="row">
+                            <h2>What kind of entertainment do you like?</h2>
+                        </div>
+                        <div class="row">
+                            &nbsp;
+                        </div>
+                        <div class="row">
+                            <div class="col pt-2 alin">
+                                <input type="radio" name="quest5" id="a5" value="1" />
+                                <label for="a5">a) Gambling game , Virtual reality games
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col pt-2 alin">
+                                <input type="radio" name="quest5" id="b5" value="2" />
+                                <label for="b5">b) Hunting, fishing, cooking</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col pt-2 alin">
+                                <input type="radio" name="quest5" id="c5" value="3" />
+                                <label for="c5">c) Theater plays, Symphony Orchestra, Ballet dance  </label></div>
+                        </div>
+                        <div class="row">
+                            <input type="button" value="Results" class="btn btn-primary mx-auto mt-5"
+                                onclick="results()" />
+                        </div>
+                    </div>
+
+                    <div id="results" class=" mx-auto">
+                        <h2>When visit a country you`r favorite places is:</h2>
+                        <br />
+                        <p id="result"></p>
+                        <a class="btn btn-info rounded mt-3" href="index.html">Refres Quiz</a>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
